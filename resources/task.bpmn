@@ -1,0 +1,214 @@
+<?xml version="1.0" standalone="yes"?>
+<semantic:definitions id="_1275940932088" targetNamespace="http://www.trisotech.com/definitions/_1275940932088" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL">
+    
+    <semantic:process isExecutable="false" id="_6-2">
+        <semantic:startEvent name="Start" id="_6-61">
+            <semantic:outgoing>_6-125</semantic:outgoing>
+        </semantic:startEvent>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Task 1" id="_6-74">
+            <semantic:incoming>_6-125</semantic:incoming>
+            <semantic:outgoing>_6-178</semantic:outgoing>
+        </semantic:task>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Task 2" id="_6-127">
+            <semantic:incoming>_6-178</semantic:incoming>
+            <semantic:outgoing>_6-420</semantic:outgoing>   
+            <!-- <semantic:incoming>_6-178</semantic:incoming> -->
+            <semantic:outgoing>_6-426</semantic:outgoing>
+        </semantic:task>
+        <!-- <semantic:eventBasedGateway eventGatewayType="Exclusive" instantiate="false" gatewayDirection="Unspecified" name="" id="_6-180"> -->
+            <!-- <semantic:incoming>_6-420</semantic:incoming> -->
+            <!-- <semantic:incoming>_6-426</semantic:incoming> -->
+            <!-- <semantic:incoming>_6-304</semantic:incoming> -->
+            <!-- <semantic:outgoing>_6-422</semantic:outgoing>
+            <semantic:outgoing>_6-424</semantic:outgoing> -->
+            <!-- <semantic:outgoing>_6-430</semantic:outgoing> -->
+        <!-- </semantic:eventBasedGateway> -->
+
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Task 3" id="_6-236">
+            <semantic:incoming>_6-426</semantic:incoming>
+            <semantic:outgoing>_6-430</semantic:outgoing>
+        </semantic:task>
+        <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Task 4" id="_6-304">
+            <semantic:incoming>_6-430</semantic:incoming>
+            <!-- <semantic:outgoing>_6-434</semantic:outgoing> -->
+        </semantic:task>
+        <!-- <semantic:task completionQuantity="1" isForCompensation="false" startQuantity="1" name="Task 5" id="_6-355">
+            <semantic:incoming>_6-434</semantic:incoming>
+            <semantic:outgoing>_6-436</semantic:outgoing>
+        </semantic:task> -->
+\
+        <semantic:sequenceFlow sourceRef="_6-61" targetRef="_6-74" name="" id="_6-125"/>
+        <semantic:sequenceFlow sourceRef="_6-74" targetRef="_6-127" name="" id="_6-178"/>  
+        <!-- making relation between tasks -->
+        <semantic:sequenceFlow sourceRef="_6-127" targetRef="_6-236" name="" id="_6-420"/>
+        <semantic:sequenceFlow sourceRef="_6-236" targetRef="_6-304" name="" id="_6-422"/>
+    </semantic:process>
+  
+    <bpmndi:BPMNDiagram documentation="" id="Trisotech.Visio-_6" name="Untitled Diagram" resolution="96.00000267028808">
+        <bpmndi:BPMNPlane bpmnElement="C1275940932557">
+            
+            <bpmndi:BPMNShape bpmnElement="_6-61" id="Trisotech.Visio__6__6-61">
+                <dc:Bounds height="30.0" width="30.0" x="66.0" y="96.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+
+            <bpmndi:BPMNShape bpmnElement="_6-74" id="Trisotech.Visio__6__6-74">
+                <dc:Bounds height="68.0" width="83.0" x="145.0" y="77.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <!-- task 2 -->
+            <bpmndi:BPMNShape bpmnElement="_6-127" id="Trisotech.Visio__6__6-127">
+                <dc:Bounds height="68.0" width="83.0" x="265.0" y="77.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <!--  -->
+            <bpmndi:BPMNShape bpmnElement="_6-180" id="Trisotech.Visio__6__6-180">
+                <dc:Bounds height="42.0" width="42.0" x="378.0" y="90.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-202" id="Trisotech.Visio__6__6-202">
+                <dc:Bounds height="32.0" width="32.0" x="647.0" y="95.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-219" id="Trisotech.Visio__6__6-219">
+                <dc:Bounds height="32.0" width="32.0" x="448.0" y="184.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-236" id="Trisotech.Visio__6__6-236">
+                <dc:Bounds height="68.0" width="83.0" x="517.0" y="166.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-304" id="Trisotech.Visio__6__6-304">
+                <dc:Bounds height="68.0" width="83.0" x="726.0" y="77.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-355" id="Trisotech.Visio__6__6-355">
+                <dc:Bounds height="68.0" width="83.0" x="834.0" y="77.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="_6-406" id="Trisotech.Visio__6__6-406">
+                <dc:Bounds height="32.0" width="32.0" x="956.0" y="95.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNShape>
+
+            <bpmndi:BPMNEdge bpmnElement="_6-422" id="Trisotech.Visio__6__6-422">
+                <di:waypoint x="420.0" y="111.0"/>
+                <di:waypoint x="438.0" y="111.0"/>
+                <di:waypoint x="647.0" y="111.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-646" messageVisibleKind="non_initiating" id="Trisotech.Visio__6__6-646">
+                <di:waypoint x="658.0" y="629.0"/>
+                <di:waypoint x="658.0" y="432.0"/>
+                <di:waypoint x="782.0" y="432.0"/>
+                <di:waypoint x="782.0" y="145.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-428" id="Trisotech.Visio__6__6-428">
+                <di:waypoint x="679.0" y="111.0"/>
+                <di:waypoint x="726.0" y="111.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-748" id="Trisotech.Visio__6__6-748">
+                <di:waypoint x="250.0" y="420.0"/>
+                <di:waypoint x="268.0" y="420.0"/>
+                <di:waypoint x="286.0" y="420.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-420" id="Trisotech.Visio__6__6-420">
+                <di:waypoint x="348.0" y="111.0"/>
+                <di:waypoint x="366.0" y="111.0"/>
+                <di:waypoint x="378.0" y="111.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-636" id="Trisotech.Visio__6__6-636">
+                <di:waypoint x="686.0" y="663.0"/>
+                <di:waypoint x="704.0" y="663.0"/>
+                <di:waypoint x="722.0" y="663.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <!-- <bpmndi:BPMNEdge bpmnElement="_6-750" id="Trisotech.Visio__6__6-750">
+                <di:waypoint x="328.0" y="386.0"/>
+                <di:waypoint x="328.0" y="348.0"/>
+                <di:waypoint x="572.0" y="348.0"/>
+                <di:waypoint x="572.0" y="234.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge> -->
+            <bpmndi:BPMNEdge bpmnElement="_6-436" id="Trisotech.Visio__6__6-436">
+                <di:waypoint x="918.0" y="111.0"/>
+                <di:waypoint x="936.0" y="111.0"/>
+                <di:waypoint x="956.0" y="111.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-632" id="Trisotech.Visio__6__6-632">
+                <di:waypoint x="335.0" y="555.0"/>
+                <di:waypoint x="353.0" y="555.0"/>
+                <di:waypoint x="353.0" y="663.0"/>
+                <di:waypoint x="464.0" y="663.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-634" id="Trisotech.Visio__6__6-634">
+                <di:waypoint x="548.0" y="663.0"/>
+                <di:waypoint x="603.0" y="663.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-125" id="Trisotech.Visio__6__6-125">
+                <di:waypoint x="96.0" y="111.0"/>
+                <di:waypoint x="114.0" y="111.0"/>
+                <di:waypoint x="145.0" y="111.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-430" id="Trisotech.Visio__6__6-430">
+                <di:waypoint x="600.0" y="200.0"/>
+                <di:waypoint x="618.0" y="200.0"/>
+                <di:waypoint x="618.0" y="252.0"/>
+                <di:waypoint x="576.0" y="252.0"/>
+                <di:waypoint x="549.0" y="252.0"/>
+                <di:waypoint x="360.0" y="252.0"/>
+                <di:waypoint x="360.0" y="111.0"/>
+                <di:waypoint x="378.0" y="111.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-642" id="Trisotech.Visio__6__6-642">
+                <di:waypoint x="545.0" y="234.0"/>
+                <di:waypoint x="545.0" y="324.0"/>
+                <di:waypoint x="234.0" y="324.0"/>
+                <di:waypoint x="234.0" y="404.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-424" id="Trisotech.Visio__6__6-424">
+                <di:waypoint x="399.0" y="132.0"/>
+                <di:waypoint x="399.0" y="200.0"/>
+                <di:waypoint x="448.0" y="200.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-638" messageVisibleKind="initiating" id="Trisotech.Visio__6__6-638">
+                <di:waypoint x="306.0" y="145.0"/>
+                <di:waypoint x="306.0" y="252.0"/>
+                <di:waypoint x="94.0" y="252.0"/>
+                <di:waypoint x="94.0" y="405.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-426" id="Trisotech.Visio__6__6-426">
+                <di:waypoint x="480.0" y="200.0"/>
+                <di:waypoint x="498.0" y="200.0"/>
+                <di:waypoint x="517.0" y="200.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="_6-693" id="Trisotech.Visio__6__6-693">
+                <di:waypoint x="161.0" y="441.0"/>
+                <di:waypoint x="161.0" y="556.0"/>
+                <di:waypoint x="252.0" y="555.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+            <!-- task1 -> task 2 -->
+            <bpmndi:BPMNEdge bpmnElement="_6-178" id="Trisotech.Visio__6__6-178">
+                <di:waypoint x="228.0" y="111.0"/>
+                <di:waypoint x="265.0" y="111.0"/>
+                <bpmndi:BPMNLabel/>
+            </bpmndi:BPMNEdge>
+        
+            
+        </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+</semantic:definitions>
