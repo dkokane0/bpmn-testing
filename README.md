@@ -7,10 +7,6 @@ along with a node-style web application using [Webpack](https://webpack.js.org).
 
 ## About
 
-This example uses bpmn-js to embed the [pizza collaboration](http://demo.bpmn.io/s/pizza-collaboration) diagram into a web application.
-
-![example screenshot](./resources/screenshot.png "Screenshot of the example application")
-
 
 ## Usage Summary
 
